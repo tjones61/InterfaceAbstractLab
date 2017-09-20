@@ -20,33 +20,33 @@ public class ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
+    public final void setCourseName(String courseName) {
         if (courseName == null || courseName.length() == 0) {
             throw new IllegalArgumentException("This is not a valid course name");
         }
         this.courseName = courseName;
     }
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         if (courseNumber == null || courseNumber.length() == 0) {
             throw new IllegalArgumentException("This is not a valid course number");
         }
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
 
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if (credits < 0.5 || credits > 4.0) {
             throw new IllegalArgumentException("This is not a valid amount of credits");
         }
